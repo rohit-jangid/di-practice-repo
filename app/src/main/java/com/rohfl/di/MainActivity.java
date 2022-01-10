@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
 //    @Inject SampleObject sampleObject;
 
-    @Inject SampleInterfaceImpl sampleInterfaceImpl;
+    @Inject SampleInterface sampleInterface;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
