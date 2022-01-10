@@ -1,6 +1,7 @@
 package com.rohfl.di;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 
 import android.os.Bundle;
 import android.view.View;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_main);
 
+        // use like below when we have generated the binding file, else use DataBindingUtil
         binding = ActivityMainBinding.inflate(getLayoutInflater());
 
         View v = binding.getRoot();
