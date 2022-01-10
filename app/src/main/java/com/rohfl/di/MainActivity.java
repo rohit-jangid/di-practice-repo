@@ -18,19 +18,30 @@ public class MainActivity extends AppCompatActivity {
 
     @Inject OtherObject otherObject;
 
-    ActivityMainBinding activityMainBinding;
+    ActivityMainBinding binding;
+
+    private boolean isAlreadyClicked;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_main);
 
-        activityMainBinding = ActivityMainBinding.inflate(getLayoutInflater());
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
 
-        View v = activityMainBinding.getRoot();
+        View v = binding.getRoot();
 
         setContentView(v);
 
+        binding.button.setOnClickListener(v1 -> {
+            if(!isAlreadyClicked) {
+                binding.sampleText.setText("Hello Rohit, I am text view.");
+            } else {
+                binding.sampleText.setText("");
+            }
+            isAlreadyClicked = !isAlreadyClicked;
+
+        });
 //        sampleObject.hello();
 
     }
