@@ -14,7 +14,7 @@ public class SampleInterfaceImpl implements SampleInterface{
     }
 
     @Override public void helloThere() {
-        Log.d(TAG, "helloThere: Called 1");
+        Log.d(TAG, "helloThere");
     }
 
 }
