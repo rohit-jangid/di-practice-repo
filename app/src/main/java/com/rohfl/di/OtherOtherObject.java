@@ -1,4 +1,4 @@
-package com.rohfl.di.modules;
+package com.rohfl.di;
 
 import android.util.Log;
 

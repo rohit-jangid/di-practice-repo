@@ -2,8 +2,6 @@ package com.rohfl.di;
 
 import android.util.Log;
 
-import com.rohfl.di.modules.OtherOtherObject;
-
 import javax.inject.Inject;
 
 public class OtherObject {
